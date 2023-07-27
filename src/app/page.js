@@ -211,6 +211,9 @@ export default function RegisFormPage() {
       {/* Total Payment */}
       <div>
         Total Payment : {computeTotalPayment().toLocaleString()} THB
+        {buyBottle && buyCap && buyShoes && (
+          <span className="text-success d-block">(20% Discounted)</span>
+        )}
         {/* Render below element conditionally when user get 20% discount */}
         {/* <span className="text-success d-block">(20% Discounted)</span> */}
       </div>
